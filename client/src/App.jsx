@@ -14,6 +14,7 @@ import UpdatePost from './pages/UpdatePost';
 import PostPage from './pages/PostPage';
 import ScrollToTop from './components/ScrollToTop';
 import Search from './pages/Search';
+import WriteScript from './pages/WriteScript';
 
 export default function App() {
   return (
@@ -30,7 +31,7 @@ export default function App() {
           <Route path='/dashboard' element={<Dashboard />} />
         </Route>
         <Route element={<OnlyAdminPrivateRoute />}>
-          <Route path='/create-post' element={<CreatePost />} />
+          <Route path='/create-post' element={<WriteScript />} />
           <Route path='/update-post/:postId' element={<UpdatePost />} />
         </Route>
 
